@@ -8,11 +8,11 @@
 			"publicTimeLimit":"200",
 			"exec":
 			[{
-				"evalJs":"$("input.input.input_white[type=text]").val("15275429358");",
+				"evalJs":"$('input.input.input_white[type=text]').val('15275429358');",
 				"delay":"2",
 				"remark":"填充用户名"
 			},{
-				"evalJs":"$("input.input.input_white[type=password]").val("lianxinkeji");",
+				"evalJs":"$('input.input.input_white[type=password]').val('lianxinkeji');",
 				"delay":"2",
 				"remark":"填充密码"
 			}],
@@ -33,79 +33,79 @@
 			"publicTimeLimit":"1000",
 			"exec":
 			[{
-				"evalJs":"$("div#boxJobInput").click();",
+				"evalJs":"$('div#boxJobInput').click();",
 				"delay":"2",
 				"remark":"选择职位类别1"
 			},{
-				"evalJs":"$("#it-list1").find("li").eq(3).mouseover();",
+				"evalJs":"$('#it-list1').find('li').eq(3).mouseover();",
 				"delay":"2",
 				"remark":"选择职位类别2"
 			},{
-				"evalJs":"$("#it-list2").find("li").eq(3).mouseover();",
+				"evalJs":"$('#it-list2').find('li').eq(3).mouseover();",
 				"delay":"2",
 				"remark":"选择职位类别3"
 			},{
-				"evalJs":"$("ul#tag-rank-list").find("li").eq(2).click();",
+				"evalJs":"$('ul#tag-rank-list').find('li').eq(2).click();",
 				"delay":"2",
 				"remark":"选择职位类别4"
 			},{
-				"evalJs":"$("ul#tag-rank-list").find("li").eq(3).click();",
+				"evalJs":"$('ul#tag-rank-list').find('li').eq(3).click();",
 				"delay":"2",
 				"remark":"选择职位类别5"
 			},{
-				"evalJs":$("input.tag-bottom-sure.noselected").click();",
+				"evalJs":"$('input.tag-bottom-sure.noselected').click();",
 				"delay":"2",
 				"remark":"选择职位类别6"
 			},{
-				"evalJs":"$("input#positionName").val("产品经理");",
+				"evalJs":"$('input#positionName').val('产品经理');",
 				"delay":"2",
 				"remark":"选择职位名称"
 			},{
-				"evalJs":"$("iframe#ueditor_0").contents().find("body.view").text('职位描述');",
+				"evalJs":"$('iframe#ueditor_0').contents().find('body.view').text('职位描述');",
 				"delay":"2",
 				"remark":"职位描述"
 			},{
-				"evalJs":"$("div.position-label-add").click();",
+				"evalJs":"$('div.position-label-add').click();",
 				"delay":"2",
 				"remark":"职位标签1"
 			},{
-				"evalJs":"$('$("input.position-label-wa.valid[name='addposition']").val('标签');",
+				"evalJs":"$(\"input.position-label-wa.valid[name='addposition']\").val('标签');",
 				"delay":"2",
 				"remark":"职位标签2"
 			},{
-				"evalJs":"$('$("button.position-label-style").click();",
+				"evalJs":"$('button.position-label-style').click();",
 				"delay":"2",
 				"remark":"职位标签3"
 			},{
-				"evalJs":"$("ul.profile-radio-list").find("li").eq(0).find("label.profile-radio").click();",
+				"evalJs":"$('ul.profile-radio-list').find('li').eq(0).find('label.profile-radio').click();",
 				"delay":"2",
 				"remark":"工作性质"
 			},{
-				"evalJs":"$("div.trigger.icon-arrow-down-after").eq(0).click();",
+				"evalJs":"$('div.trigger.icon-arrow-down-after').eq(0).click();",
 				"delay":"2",
 				"remark":"工作经验1"
 			},{
-				"evalJs":"$("ul.options.overflowing").find("li").eq(2).click();",
+				"evalJs":"$('ul.options.overflowing').find('li').eq(2).click();",
 				"delay":"2",
 				"remark":"工作经验2"
 			},{
-				"evalJs":"$("div.trigger.icon-arrow-down-after").eq(1).click();",
+				"evalJs":"$('div.trigger.icon-arrow-down-after').eq(1).click();",
 				"delay":"2",
 				"remark":"学历要求1"
 			},{
-				"evalJs":"$("ul.options.open").find("li").eq(2).click();",
+				"evalJs":"$('ul.options.open').find('li').eq(2).click();",
 				"delay":"2",
 				"remark":"学历要求2"
 			},{
-				"evalJs":"$("input#department-input").val('技术部');",
+				"evalJs":"$('input#department-input').val('技术部');",
 				"delay":"2",
 				"remark":"所属部门"
 			},{
-				"evalJs":"$('$("input#positionAdvantageInputFirst").val('一个字');').click();",
+				"evalJs":"$('input#positionAdvantageInputFirst').val('一个字');').click();",
 				"delay":"2",
 				"remark":"职位亮点"
 			},{
-				"evalJs":"$('$("input#salary-min-input").val('7');;",
+				"evalJs":"$('input#salary-min-input').val('7');;",
 				"delay":"2",
 				"remark":"月薪范围"
 			},{
@@ -124,7 +124,7 @@
 			"name":"发布",
 			"implementExec":
 			[{
-				"evalJs":":$("#position-save-button").click();",
+				"evalJs":":$('#position-save-button').click();",
 				"delay":"2",
 				"remark":"发 布"
 			}]
