@@ -1,6 +1,6 @@
 {
 	"code":"0",
-	"msg":"获取智联招聘发布数据成功",
+	"msg":"获取拉钩发布数据成功",
 	"data":{
 		"autoList":
 		[{
@@ -8,18 +8,18 @@
 			"publicTimeLimit":"200",
 			"exec":
 			[{
-				"evalJs":"$("input.input.input_white[type=text]").val("15063068120");",
+				"evalJs":"$("input.input.input_white[type=text]").val("15275429358");",
 				"delay":"2",
 				"remark":"填充用户名"
 			},{
-				"evalJs":"$("input.input.input_white[type=password]").val("lianxin123");",
+				"evalJs":"$("input.input.input_white[type=password]").val("lianxinkeji");",
 				"delay":"2",
 				"remark":"填充密码"
 			}],
 			"vaild":[{
 				"type":"1",
 				"vaild":"2",
-				"value":"https://ehire.51job.com/Navigate.aspx?ShowTips=11&PwdComplexity=N"}],
+				"value":"https://easy.lagou.com/parentposition/createPosition.htm"}],
 			"name":"登陆",
 			"implementExec":
 			[{
@@ -29,85 +29,85 @@
 			}]
 		},
 		{
-			"url":"https://ehire.51job.com/Jobs/JobEdit.aspx?Mark=New",
+			"url":"https://easy.lagou.com/parentposition/createPosition.htm",
 			"publicTimeLimit":"1000",
 			"exec":
 			[{
-				"evalJs":"$("#CJOBNAME").val("前端工程师");",
+				"evalJs":"$("div#boxJobInput").click();",
+				"delay":"2",
+				"remark":"选择职位类别1"
+			},{
+				"evalJs":"$("#it-list1").find("li").eq(3).mouseover();",
+				"delay":"2",
+				"remark":"选择职位类别2"
+			},{
+				"evalJs":"$("#it-list2").find("li").eq(3).mouseover();",
+				"delay":"2",
+				"remark":"选择职位类别3"
+			},{
+				"evalJs":"$("ul#tag-rank-list").find("li").eq(2).click();",
+				"delay":"2",
+				"remark":"选择职位类别4"
+			},{
+				"evalJs":"$("ul#tag-rank-list").find("li").eq(3).click();",
+				"delay":"2",
+				"remark":"选择职位类别5"
+			},{
+				"evalJs":$("input.tag-bottom-sure.noselected").click();",
+				"delay":"2",
+				"remark":"选择职位类别6"
+			},{
+				"evalJs":"$("input#positionName").val("产品经理");",
 				"delay":"2",
 				"remark":"选择职位名称"
 			},{
-				"evalJs":"$("#JOBNUM").val("5");",
+				"evalJs":"$("iframe#ueditor_0").contents().find("body.view").text('职位描述');",
 				"delay":"2",
-				"remark":"选择招聘人数"
+				"remark":"职位描述"
 			},{
-				"evalJs":"OpenJobArea()",
+				"evalJs":"$("div.position-label-add").click();",
 				"delay":"2",
-				"remark":"选择发布城市"
+				"remark":"职位标签1"
 			},{
-				"evalJs":"$('input#JobTitle.shadow_bg.job_name_input').val('逆向工程分析工程��&#65533;');",
+				"evalJs":"$('$("input.position-label-wa.valid[name='addposition']").val('标签');",
 				"delay":"2",
-				"remark":"选择职位名称"
+				"remark":"职位标签2"
 			},{
-				"evalJs":"$('#buttonSelJobTypeMain').click();",
+				"evalJs":"$('$("button.position-label-style").click();",
 				"delay":"2",
-				"remark":"展开职位类型"
+				"remark":"职位标签3"
 			},{
-				"evalJs":"$(\".availItem[title='市场']\").click();",
+				"evalJs":"$("ul.profile-radio-list").find("li").eq(0).find("label.profile-radio").click();",
 				"delay":"2",
-				"remark":"选择职位大类"
+				"remark":"工作性质"
 			},{
-				"evalJs":"$(\"input[iname='市场总监']\").click();",
+				"evalJs":"$("div.trigger.icon-arrow-down-after").eq(0).click();",
 				"delay":"2",
-				"remark":"选择职位小类"
+				"remark":"工作经验1"
 			},{
-				"evalJs":"$('.sButtonBlock .orgButton').click();",
+				"evalJs":"$("ul.options.overflowing").find("li").eq(2).click();",
 				"delay":"2",
-				"remark":"确认职位类别"
+				"remark":"工作经验2"
 			},{
-				"evalJs":"$('input#Quantity.shadow_bg.fl').val('2');",
+				"evalJs":"$("div.trigger.icon-arrow-down-after").eq(1).click();",
 				"delay":"2",
-				"remark":"设置招聘要求人数"
+				"remark":"学历要求1"
 			},{
-				"evalJs":"$('#education_selector .select a:eq(1)').click();",
+				"evalJs":"$("ul.options.open").find("li").eq(2).click();",
 				"delay":"2",
-				"remark":"设置招聘要求学历"
+				"remark":"学历要求2"
 			},{
-				"evalJs":"$('#experience_selector .select a:eq(1)').click();",
+				"evalJs":"$("input#department-input").val('技术部');",
 				"delay":"2",
-				"remark":"设置招聘要求工作经验"
+				"remark":"所属部门"
 			},{
-				"evalJs":"$('#salary_selector .select a:eq(1)').click();",
+				"evalJs":"$('$("input#positionAdvantageInputFirst").val('一个字');').click();",
 				"delay":"2",
-				"remark":"设置职位月薪"
+				"remark":"职位亮点"
 			},{
-				"evalJs":"$('#ueditor_0').contents().find('body.view').html('这里是职位描��&#65533;,巴拉巴拉<h3>html</h3><hr>');",
+				"evalJs":"$('$("input#salary-min-input").val('7');;",
 				"delay":"2",
-				"remark":"设置职位描述"
-			},{
-				"evalJs":"$('a#set_publish_position').click();",
-				"delay":"2",
-				"remark":"设置职位发布地点"
-			},{
-				"evalJs":"$('div#select_pro.select_txt .txt').click();",
-				"delay":"2",
-				"remark":"展开��&#65533;"
-			},{
-				"evalJs":"$('table#position_selector_pro a:eq(2)').click();",
-				"delay":"2",
-				"remark":"选择��&#65533;"
-			},{
-				"evalJs":"$('div#select_area.select_txt .txt').click();",
-				"delay":"2",
-				"remark":"展开"
-			},{
-				"evalJs":"$('table#position_selector_area a:eq(2)').click();",
-				"delay":"2",
-				"remark":"选择"
-			},{
-				"evalJs":"$('div#popup_footer a:first').click();",
-				"delay":"2",
-				"remark":"确定职位发布地点"
+				"remark":"月薪范围"
 			},{
 				"evalJs":"$('input#WorkAddress').val('山东省青岛市李沧区虎山路');",
 				"delay":"2",
@@ -120,11 +120,11 @@
 			"vaild":[{
 				"type":"1",
 				"vaild":"2",
-				"value":"https://rd2.zhaopin.com/s/homepage.asp"}],
+				"value":"www.cg.com"}],
 			"name":"发布",
 			"implementExec":
 			[{
-				"evalJs":"$('a#save_and_pub_submit').click();",
+				"evalJs":":$("#position-save-button").click();",
 				"delay":"2",
 				"remark":"发 布"
 			}]
