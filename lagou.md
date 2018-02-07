@@ -1,0 +1,134 @@
+{
+	"code":"0",
+	"msg":"获取智联招聘发布数据成功",
+	"data":{
+		"autoList":
+		[{
+			"url":"https://passport.lagou.com/login/login.html?service=https%3a%2f%2fwww.lagou.com%2f",
+			"publicTimeLimit":"200",
+			"exec":
+			[{
+				"evalJs":"$("input.input.input_white[type=text]").val("15063068120");",
+				"delay":"2",
+				"remark":"填充用户名"
+			},{
+				"evalJs":"$("input.input.input_white[type=password]").val("lianxin123");",
+				"delay":"2",
+				"remark":"填充密码"
+			}],
+			"vaild":[{
+				"type":"1",
+				"vaild":"2",
+				"value":"https://ehire.51job.com/Navigate.aspx?ShowTips=11&PwdComplexity=N"}],
+			"name":"登陆",
+			"implementExec":
+			[{
+				"evalJs":"$('div.input_item.btn_group.clearfix input').click();",
+				"delay":"2",
+				"remark":"登 陆"
+			}]
+		},
+		{
+			"url":"https://ehire.51job.com/Jobs/JobEdit.aspx?Mark=New",
+			"publicTimeLimit":"1000",
+			"exec":
+			[{
+				"evalJs":"$("#CJOBNAME").val("前端工程师");",
+				"delay":"2",
+				"remark":"选择职位名称"
+			},{
+				"evalJs":"$("#JOBNUM").val("5");",
+				"delay":"2",
+				"remark":"选择招聘人数"
+			},{
+				"evalJs":"OpenJobArea()",
+				"delay":"2",
+				"remark":"选择发布城市"
+			},{
+				"evalJs":"$('input#JobTitle.shadow_bg.job_name_input').val('逆向工程分析工程��&#65533;');",
+				"delay":"2",
+				"remark":"选择职位名称"
+			},{
+				"evalJs":"$('#buttonSelJobTypeMain').click();",
+				"delay":"2",
+				"remark":"展开职位类型"
+			},{
+				"evalJs":"$(\".availItem[title='市场']\").click();",
+				"delay":"2",
+				"remark":"选择职位大类"
+			},{
+				"evalJs":"$(\"input[iname='市场总监']\").click();",
+				"delay":"2",
+				"remark":"选择职位小类"
+			},{
+				"evalJs":"$('.sButtonBlock .orgButton').click();",
+				"delay":"2",
+				"remark":"确认职位类别"
+			},{
+				"evalJs":"$('input#Quantity.shadow_bg.fl').val('2');",
+				"delay":"2",
+				"remark":"设置招聘要求人数"
+			},{
+				"evalJs":"$('#education_selector .select a:eq(1)').click();",
+				"delay":"2",
+				"remark":"设置招聘要求学历"
+			},{
+				"evalJs":"$('#experience_selector .select a:eq(1)').click();",
+				"delay":"2",
+				"remark":"设置招聘要求工作经验"
+			},{
+				"evalJs":"$('#salary_selector .select a:eq(1)').click();",
+				"delay":"2",
+				"remark":"设置职位月薪"
+			},{
+				"evalJs":"$('#ueditor_0').contents().find('body.view').html('这里是职位描��&#65533;,巴拉巴拉<h3>html</h3><hr>');",
+				"delay":"2",
+				"remark":"设置职位描述"
+			},{
+				"evalJs":"$('a#set_publish_position').click();",
+				"delay":"2",
+				"remark":"设置职位发布地点"
+			},{
+				"evalJs":"$('div#select_pro.select_txt .txt').click();",
+				"delay":"2",
+				"remark":"展开��&#65533;"
+			},{
+				"evalJs":"$('table#position_selector_pro a:eq(2)').click();",
+				"delay":"2",
+				"remark":"选择��&#65533;"
+			},{
+				"evalJs":"$('div#select_area.select_txt .txt').click();",
+				"delay":"2",
+				"remark":"展开"
+			},{
+				"evalJs":"$('table#position_selector_area a:eq(2)').click();",
+				"delay":"2",
+				"remark":"选择"
+			},{
+				"evalJs":"$('div#popup_footer a:first').click();",
+				"delay":"2",
+				"remark":"确定职位发布地点"
+			},{
+				"evalJs":"$('input#WorkAddress').val('山东省青岛市李沧区虎山路');",
+				"delay":"2",
+				"remark":"设置工作地点"
+			},{
+				"evalJs":"$('input#DateEnd').val('2018-11-11');",
+				"delay":"2",
+				"remark":"设置职位发布日期"
+			}],
+			"vaild":[{
+				"type":"1",
+				"vaild":"2",
+				"value":"https://rd2.zhaopin.com/s/homepage.asp"}],
+			"name":"发布",
+			"implementExec":
+			[{
+				"evalJs":"$('a#save_and_pub_submit').click();",
+				"delay":"2",
+				"remark":"发 布"
+			}]
+
+		}]
+	}
+}
