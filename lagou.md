@@ -61,7 +61,7 @@
 				"delay":"2",
 				"remark":"选择职位名称"
 			},{
-				"evalJs":"$('iframe#ueditor_0').contents().find('body.view').text('职位描述');",
+				"evalJs":"$('iframe#ueditor_0').contents().find('body.view').text('职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：');",
 				"delay":"2",
 				"remark":"职位描述"
 			},{
@@ -107,8 +107,14 @@
 			},{
 				"evalJs":"$('input#salary-min-input').val('7');;",
 				"delay":"2",
-				"remark":"月薪范围"
-			},{
+				"remark":"月薪范围1"
+			},
+			{
+				"evalJs":"$('$("input#salary-min-input").val('7');;",
+				"delay":"2",
+				"remark":"月薪范围2"
+			},
+			{
 				"evalJs":"$('input#WorkAddress').val('山东省青岛市李沧区虎山路');",
 				"delay":"2",
 				"remark":"设置工作地点"
