@@ -101,7 +101,7 @@
 				"delay":"2",
 				"remark":"所属部门"
 			},{
-				"evalJs":"$('input#positionAdvantageInputFirst').val('一个字');').click();",
+				"evalJs":"$('input#positionAdvantageInputFirst').val('老板');",
 				"delay":"2",
 				"remark":"职位亮点"
 			},{
@@ -110,7 +110,7 @@
 				"remark":"月薪范围1"
 			},
 			{
-				"evalJs":$("input#salary-max-input").val('9');,
+				"evalJs":$('input#salary-max-input').val('9');,
 				"delay":"2",
 				"remark":"月薪范围2"
 			},
