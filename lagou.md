@@ -124,9 +124,9 @@
 				"remark":"设置职位发布日期"
 			}],
 			"vaild":[{
-				"type":"1",
-				"vaild":"2",
-				"value":"www.cg.com"}],
+				"type":"2",
+				"vaild":"1",
+				"value":"div class='release_position_container' id='release-container' style='display: none;'"}],
 			"name":"发布",
 			"implementExec":
 			[{
