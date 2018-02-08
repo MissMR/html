@@ -19,7 +19,7 @@
 			"vaild":[{
 				"type":"1",
 				"vaild":"2",
-				"value":"https://easy.lagou.com/parentposition/createPosition.htm"}],
+				"value":"https://www.lagou.com/"}],
 			"name":"登陆",
 			"implementExec":
 			[{
