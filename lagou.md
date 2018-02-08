@@ -110,7 +110,7 @@
 				"remark":"月薪范围1"
 			},
 			{
-				"evalJs":$('input#salary-max-input').val('9');,
+				"evalJs":"$('input#salary-max-input').val('9');",
 				"delay":"2",
 				"remark":"月薪范围2"
 			},
