@@ -130,7 +130,7 @@
 			"name":"发布",
 			"implementExec":
 			[{
-				"evalJs":":$('#position-save-button').click();",
+				"evalJs":"$('#position-save-button').click();",
 				"delay":"2",
 				"remark":"发 布"
 			}]
