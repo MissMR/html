@@ -1,0 +1,100 @@
+{
+	"code":"0",
+	"msg":"获取boss直聘发布数据成功",
+	"data":{
+		"autoList":
+		[{
+			"url":"https://sao.zhipin.com/",
+			"publicTimeLimit":"200",
+			"exec":
+			[{
+				"evalJs":"$('.sign-tab .link-signin').click();",
+				"delay":"2",
+				"remark":"登录切换密码登录"
+			},{
+				"evalJs":"$(\"input[name='account']\").val('18366211579');",
+				"delay":"2",
+				"remark":"填充用户名"
+			},
+			{
+				"evalJs":"$(\"input[name='password']\").val('lianxin81633860');",
+				"delay":"2",
+				"remark":"填充密码"
+			}],
+			"vaild":[{
+				"type":"1",
+				"vaild":"2",
+				"value":"https://www.zhipin.com/chat/im"}],
+			"name":"登陆",
+			"implementExec":
+			[{
+				"evalJs":"$('button.btn').click();",
+				"delay":"2",
+				"remark":"登 陆"
+			}]
+		},
+		{
+			"url":"https://www.zhipin.com/chat/im?mu=/bossweb/jobedit/0.html",
+			"publicTimeLimit":"1000",
+			"exec":
+			[{
+				"evalJs":"$(\"input[name='positionName']\").val('Arduino研发工程师');",
+				"delay":"2",
+				"remark":"选择职位名称"
+			},{
+				"evalJs":"$(\"input[name='positionCategory']\").val('实习生');",
+				"delay":"2",
+				"remark":"选择职位类型"
+			},{
+				"evalJs":"$(\"div.c[ka='job-edit-jobtype'] p:eq(2)\").click();",
+				"delay":"2",
+				"remark":"工作性质"
+			},{
+				"evalJs":"$(\"input.ipt[ka='job-edit-experience']\").click();",
+				"delay":"2",
+				"remark":"经验-展开菜单"
+			},{
+				"evalJs":"$(\"div.dropdown-wrap.dropdown-short.dropdown-menu-open li:eq(0)\").click();",
+				"delay":"2",
+				"remark":"经验-选中选项"
+			},{
+				"evalJs":"$(\"input.ipt[ka='job-edit-degree']\").click();",
+				"delay":"2",
+				"remark":"学历-展开菜单"
+			},{
+				"evalJs":"$(\"div.dropdown-wrap.dropdown-short.dropdown-menu-open li:eq(0)\").click();",
+				"delay":"2",
+				"remark":"学历-选中选项"
+			},{
+				"evalJs":"$(\"input.ipt[placeholder='最低']\").click();",
+				"delay":"2",
+				"remark":"薪资范围-展开最低"
+			},{
+				"evalJs":"$(\"div.dropdown-wrap.dropdown-short.dropdown-menu-open li:eq(0)\").click();",
+				"delay":"2",
+				"remark":"薪资范围-选中选项"
+			},{
+				"evalJs":"$('div.bootstrap-tagsinput').html('<span class=\"tag \">J2ME<span data-role=\"remove\"></span></span>'+$('div.bootstrap-tagsinput').html());",
+				"delay":"2",
+				"remark":"技能要求"
+			},{
+				"evalJs":"$(\"textarea[ka='job-edit-description']\").val(\"1234567哈哈哈哈<hr />7654321\");",
+				"delay":"2",
+				"remark":"职位描述"
+			}],
+
+			"vaild":[{
+				"type":"2",
+				"vaild":"1",
+				"value":"div class='release_position_container' id='release-container' style='display: none;'"}],
+			"name":"发布",
+			"implementExec":
+			[{
+				"evalJs":"$(\"button[ka='job_edit_save']\").click();",
+				"delay":"2",
+				"remark":"发 布"
+			}]
+
+		}]
+	}
+}
