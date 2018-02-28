@@ -1,0 +1,191 @@
+{
+	"code":"0",
+	"msg":"获取前程无忧发布数据成功",
+	"data":{
+		"autoList":
+		[{
+			"url":"https://ehire.51job.com",
+			"publicTimeLimit":"200",
+			"exec":
+			[{
+				"evalJs":"$('input#txtMemberNameCN').val('联信商务咨询');",
+				"delay":"2",
+				"remark":"填充会员名"
+			},{
+				"evalJs":"$('#txtUserNameCN').val('lxsw2681');",
+				"delay":"2",
+				"remark":"填充用户名"
+			},
+			{
+				"evalJs":"$('span#weizaoPasswordCN').hide();",
+				"delay":"2",
+				"remark":"隐藏密码提示文案"
+			},
+			{
+				"evalJs":"$('#txtPasswordCN').val('qdlx971117');",
+				"delay":"2",
+				"remark":"填充密码"
+			}
+			],
+			"vaild":[{
+				"type":"1",
+				"vaild":"2",
+				"value":"https://ehire.51job.com/Navigate.aspx?ShowTips=11&PwdComplexity=N"}],
+			"name":"登陆",
+			"implementExec":
+			[{
+				"evalJs":"$('#Login_btnLoginCN').click();",
+				"delay":"2",
+				"remark":"登 陆"
+			}]
+		},
+		{
+			"url":"  https://ehire.51job.com/Jobs/JobEdit.aspx?Mark=New",
+			"publicTimeLimit":"1000",
+			"exec":
+			[{
+				"evalJs":"$(\"ul.clearfix li[data-value=0]\").click();",
+				"delay":"2",
+				"remark":"切换社会职位"
+			},{
+				"evalJs":"$(\"div#jobname-input input.input\").val(\"前端工程师\");",
+				"delay":"2",
+				"remark":"职位名称"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-s#jobcode-input input.input\").val(\"123\");",
+				"delay":"2",
+				"remark":"职位编号"
+			},{
+				"evalJs":"$(\"div#choose_jobarea_pare a.chooseIcon.ehrui-icon\").click();",
+				"delay":"2",
+				"remark":"打开城市选择列表"
+			},{
+				"evalJs":"resume_areaLayer.selectarea('120300',0,1,1);",
+				"delay":"2",
+				"remark":"选择热门城市"
+			},{
+				"evalJs":"$(\"a#aconfirm\").click();",
+				"delay":"2",
+				"remark":"确认选择"
+			},{
+				"evalJs":"$(\"div#search_funtype_pare a.chooseIcon.ehrui-icon\").click();",
+				"delay":"2",
+				"remark":"展开职能列表"
+			},{
+				"evalJs":"$(\"p.Common_jobs_jobs_assloption:contains(计算机硬件)\").attr(\"class\",\"Common_jobs_jobs_asslselect\").click();",
+				"delay":"2",
+				"remark":"选中大类"
+			},{
+				"evalJs":"$(\"a[e=f]:contains(高级硬件工程师)\").click();",
+				"delay":"2",
+				"remark":"选中小类"
+			},{
+				"evalJs":"$(\"a.Common_panel_closebtn\").click(););",
+				"delay":"2",
+				"remark":"确认选择"
+			},{
+				"evalJs":"$(\"div#hirenum-input input\").val(\"5\");",
+				"delay":"2",
+				"remark":"招聘人数"
+			},{
+				"evalJs":"$(\"dd a:contains(全职)\").click();",
+				"delay":"2",
+				"remark":"切换全职"
+			},{
+				"evalJs":"$(\"input.in-xs.input09\").click();",
+				"delay":"2",
+				"remark":"展开薪资类型列表"
+			},{
+				"evalJs":"$(\"a:contains(月薪)\").click();",
+				"delay":"2",
+				"remark":"选择薪资类型"
+			},{
+				"evalJs":"$(\"input.input.input10\").click();",
+				"delay":"2",
+				"remark":"展开薪资范围列表"
+			},{
+				"evalJs":"$(\"a[title=6-8K]\").click();",
+				"delay":"2",
+				"remark":"选择薪资范围"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-l#keyword-input input.input\").val(\"职位关键词\");",
+				"delay":"2",
+				"remark":"职位关键词"
+			},{
+				"evalJs":"$('iframe.h-frame').contents().find('body').text('职位描述');",
+				"delay":"2",
+				"remark":"职位描述"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-l.ehrui-select#workyear-select input\").click();",
+				"delay":"2",
+				"remark":"打开选择工作年限列表"
+			},{
+				"evalJs":"$(\"a[title='无工作经验']\").click();",
+				"delay":"2",
+				"remark":"选择工作年限"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-l.ehrui-select#degree-select input\").click();",
+				"delay":"2",
+				"remark":"打开选择最低学历列表"
+			},{
+				"evalJs":"$(\"a[title='高中']\").click();",
+				"delay":"2",
+				"remark":"选择最低学历"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-s#age-from-input input\").val('20');",
+				"delay":"2",
+				"remark":"输入年龄范围1"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-s#age-to-input input\").val('40');",
+				"delay":"2",
+				"remark":"输入年龄范围2"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-s.downBox-s.ehrui-select#language-select input\").click();",
+				"delay":"2",
+				"remark":"打开选择语言列表"
+			},{
+				"evalJs":"$(\"a[title='日语']\").click();",
+				"delay":"2",
+				"remark":"选择语言"
+			},{
+				"evalJs":"$(\"div.inptext_fl.downBox-s.ehrui-select#language-level-select input\").click();",
+				"delay":"2",
+				"remark":"打开选择语言列表2"
+			},{
+				"evalJs":"$(\"a[title='一般']\").click();",
+				"delay":"2",
+				"remark":"选择语言2"
+			},{
+				"evalJs":"$(\"div#search_major_pare.inptext_fl.downBox-l a.chooseIcon.ehrui-icon\").click();",
+				"delay":"2",
+				"remark":"打开选择专业列表"
+			},{
+				"evalJs":"$(\"p.Common_jobs_jobs_assloption:contains(经济学类)\").click();",
+				"delay":"2",
+				"remark":"选择一级列表"
+			},{
+				"evalJs":"$(\"a[e=f]:contains(金融学)\").click();",
+				"delay":"2",
+				"remark":"选择二级列表"
+			},{
+				"evalJs":"$(\"a.Common_panel_closebtn\").click();",
+				"delay":"2",
+				"remark":"确认选择"
+			}
+			],
+
+			"vaild":[{
+				"type":"2",
+				"vaild":"1",
+				"value":"div class='release_position_container' id='release-container' style='display: none;'"}],
+			"name":"发布",
+			"implementExec":
+			[{
+				"evalJs":"$(\"a.btn-blue-l#publish-button\").click();",
+				"delay":"2",
+				"remark":"发 布"
+			}]
+
+		}]
+	}
+}
