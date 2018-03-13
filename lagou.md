@@ -4,117 +4,112 @@
 	"data":{
 		"autoList":
 		[{
-			"url":"https://passport.lagou.com/login/login.html?service=https%3a%2f%2fwww.lagou.com%2f",
-			"timeLimit":"200",
+			"url":"https://passport.lagou.com/login/login.html?service=https://easy.lagou.com/parentposition/createPosition.htm",
+			"publicTimeLimit":"200",
 			"exec":
 			[{
-				"evalJs":"$('input.input.input_white[type=text]').val('15275429358');",
+				"evalJs":"$(".input_text.user_input").val("15275429358");",
 				"delay":"2",
 				"remark":"填充用户名"
 			},{
-				"evalJs":"$('input.input.input_white[type=password]').val('lianxinkeji');",
+				"evalJs":"$(".input_text.password_input").val("123");",
 				"delay":"2",
 				"remark":"填充密码"
 			}],
 			"vaild":[{
 				"type":"1",
 				"vaild":"2",
-				"value":"https://www.lagou.com/"}],
+				"value":"https://easy.lagou.com/parentposition/createPosition.htm"}],
 			"name":"登陆",
 			"implementExec":
 			[{
 				"evalJs":"$('div.input_item.btn_group.clearfix input').click();",
+				"evalJs":"$(".submit_btn").click();",
 				"delay":"2",
 				"remark":"登 陆"
 			}]
 		},
 		{
 			"url":"https://easy.lagou.com/parentposition/createPosition.htm",
-			"timeLimit":"1000",
+			"publicTimeLimit":"1000",
 			"exec":
 			[{
-				"evalJs":"$('div#boxJobInput').click();",
+				"evalJs":"$("div#boxJobInput").click();",
 				"delay":"2",
 				"remark":"选择职位类别1"
 			},{
-				"evalJs":"$('#it-list1').find('li').eq(3).mouseover();",
+				"evalJs":"$("#it-list1").find("li").eq(3).mouseover();",
 				"delay":"2",
 				"remark":"选择职位类别2"
 			},{
-				"evalJs":"$('#it-list2').find('li').eq(3).mouseover();",
+				"evalJs":"$("#it-list2").find("li").eq(3).mouseover();",
 				"delay":"2",
 				"remark":"选择职位类别3"
 			},{
-				"evalJs":"$('ul#tag-rank-list').find('li').eq(2).click();",
+				"evalJs":"$("ul#tag-rank-list").find("li").eq(2).click();",
 				"delay":"2",
 				"remark":"选择职位类别4"
 			},{
-				"evalJs":"$('ul#tag-rank-list').find('li').eq(3).click();",
+				"evalJs":"$("ul#tag-rank-list").find("li").eq(3).click();",
 				"delay":"2",
 				"remark":"选择职位类别5"
 			},{
-				"evalJs":"$('input.tag-bottom-sure.noselected').click();",
+				"evalJs":$("input.tag-bottom-sure.noselected").click();",
 				"delay":"2",
 				"remark":"选择职位类别6"
 			},{
-				"evalJs":"$('input#positionName').val('产品经理');",
+				"evalJs":"$("input#positionName").val("产品经理");",
 				"delay":"2",
 				"remark":"选择职位名称"
 			},{
-				"evalJs":"$('iframe#ueditor_0').contents().find('body.view').text('职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：职位描述：');",
+				"evalJs":"$("iframe#ueditor_0").contents().find("body.view").text('职位描述');",
 				"delay":"2",
 				"remark":"职位描述"
 			},{
-				"evalJs":"$('div.position-label-add').click();",
+				"evalJs":"$("div.position-label-add").click();",
 				"delay":"2",
 				"remark":"职位标签1"
 			},{
-				"evalJs":"$(\"input.position-label-wa.valid[name='addposition']\").val('标签');",
+				"evalJs":"$('$("input.position-label-wa.valid[name='addposition']").val('标签');",
 				"delay":"2",
 				"remark":"职位标签2"
 			},{
-				"evalJs":"$('button.position-label-style').click();",
+				"evalJs":"$('$("button.position-label-style").click();",
 				"delay":"2",
 				"remark":"职位标签3"
 			},{
-				"evalJs":"$('ul.profile-radio-list').find('li').eq(0).find('label.profile-radio').click();",
+				"evalJs":"$("ul.profile-radio-list").find("li").eq(0).find("label.profile-radio").click();",
 				"delay":"2",
 				"remark":"工作性质"
 			},{
-				"evalJs":"$('div.trigger.icon-arrow-down-after').eq(0).click();",
+				"evalJs":"$("div.trigger.icon-arrow-down-after").eq(0).click();",
 				"delay":"2",
 				"remark":"工作经验1"
 			},{
-				"evalJs":"$('ul.options.overflowing').find('li').eq(2).click();",
+				"evalJs":"$("ul.options.overflowing").find("li").eq(2).click();",
 				"delay":"2",
 				"remark":"工作经验2"
 			},{
-				"evalJs":"$('div.trigger.icon-arrow-down-after').eq(1).click();",
+				"evalJs":"$("div.trigger.icon-arrow-down-after").eq(1).click();",
 				"delay":"2",
 				"remark":"学历要求1"
 			},{
-				"evalJs":"$('ul.options.open').find('li').eq(2).click();",
+				"evalJs":"$("ul.options.open").find("li").eq(2).click();",
 				"delay":"2",
 				"remark":"学历要求2"
 			},{
-				"evalJs":"$('input#department-input').val('技术部');",
+				"evalJs":"$("input#department-input").val('技术部');",
 				"delay":"2",
 				"remark":"所属部门"
 			},{
-				"evalJs":"$('input#positionAdvantageInputFirst').val('老板');",
+				"evalJs":"$('$("input#positionAdvantageInputFirst").val('一个字');').click();",
 				"delay":"2",
 				"remark":"职位亮点"
 			},{
-				"evalJs":"$('input#salary-min-input').val('7');;",
+				"evalJs":"$('$("input#salary-min-input").val('7');;",
 				"delay":"2",
-				"remark":"月薪范围1"
-			},
-			{
-				"evalJs":"$('input#salary-max-input').val('9');",
-				"delay":"2",
-				"remark":"月薪范围2"
-			},
-			{
+				"remark":"月薪范围"
+			},{
 				"evalJs":"$('input#WorkAddress').val('山东省青岛市李沧区虎山路');",
 				"delay":"2",
 				"remark":"设置工作地点"
@@ -124,13 +119,13 @@
 				"remark":"设置职位发布日期"
 			}],
 			"vaild":[{
-				"type":"2",
-				"vaild":"1",
-				"value":"div class='release_position_container' id='release-container' style='display: none;'"}],
+				"type":"1",
+				"vaild":"2",
+				"value":"www.cg.com"}],
 			"name":"发布",
 			"implementExec":
 			[{
-				"evalJs":"$('#position-save-button').click();",
+				"evalJs":":$("#position-save-button").click();",
 				"delay":"2",
 				"remark":"发 布"
 			}]
@@ -138,3 +133,6 @@
 		}]
 	}
 }
+
+
+https://easy.lagou.com/parentposition/createPosition.htm
