@@ -8,11 +8,11 @@
 			"publicTimeLimit":"200",
 			"exec":
 			[{
-				"evalJs":"$(".input_text.user_input").val("15275429358");",
+				"evalJs":"$(/".input_text.user_input/").val(/"15275429358/");",
 				"delay":"2",
 				"remark":"填充用户名"
 			},{
-				"evalJs":"$(".input_text.password_input").val("123");",
+				"evalJs":"$(/".input_text.password_input/").val(/"lianxinkeji/");",
 				"delay":"2",
 				"remark":"填充密码"
 			}],
