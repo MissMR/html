@@ -10,7 +10,7 @@
             "type":"0",
             "detail":"19129358",
             "actionType":"3",
-            "actionData":{"tid":"e15738ce-854b-4e73-8dfa-c472ce8ccfe9","applyName":"申请撤回的用户名","reason ":"输入的原因"},
+            "actionData":"{\"tid\":\"e15738ce-854b-4e73-8dfa-c472ce8ccfe9\",\"applyName\":\"申请撤回的用户名\",\"reason \":\"输入的原因\"}",
             "actionUrl":"19129358"        
           }
         ]
